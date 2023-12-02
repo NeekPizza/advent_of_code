@@ -1,0 +1,24 @@
+{
+  "name": "advent_of_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeekPizza/advent_of_code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeekPizza/advent_of_code/issues"
+  },
+  "homepage": "https://github.com/NeekPizza/advent_of_code#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  }
+}
