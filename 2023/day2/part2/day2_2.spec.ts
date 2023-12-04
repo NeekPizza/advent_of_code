@@ -1,5 +1,5 @@
-import { day2 } from './day2';
-import { data } from './data';
+import { day2_2 } from './day2_2';
+import { data } from '../data';
 
 const exampleData = [
   'Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green',
@@ -9,12 +9,12 @@ const exampleData = [
   'Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green',
 ];
 
-describe('day 2', () => {
+describe('day 2_2', () => {
   it('passes the example', () => {
-    expect(day2(exampleData)).toBe(8);
+    expect(day2_2(exampleData)).toBe(2286);
   });
 
   it('passes the challenge', () => {
-    expect(day2(data)).toBe(8);
+    expect(day2_2(data)).toBe(72227);
   });
 });

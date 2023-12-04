@@ -1,4 +1,4 @@
-import { day2 } from './day1_2';
+import { day1_2 } from './day1_2';
 import { data } from '../data';
 
 const exampleData = [
@@ -13,10 +13,10 @@ const exampleData = [
 
 describe('day 1_2', () => {
   it('passes example', () => {
-    expect(day2(exampleData)).toBe(281);
+    expect(day1_2(exampleData)).toBe(281);
   });
 
   it('passes challenge', () => {
-    expect(day2(data)).toBe(55686);
+    expect(day1_2(data)).toBe(55686);
   });
 });

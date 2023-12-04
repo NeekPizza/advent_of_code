@@ -1,4 +1,4 @@
-export function day2(data: string[]): number {
+export function day1_2(data: string[]): number {
   let total = 0;
   data.forEach((string) => {
     const digits = string
