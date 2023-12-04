@@ -1,19 +1,13 @@
-export function day2(data: string[]): number {
-  let total = 0;
-  data.forEach((string) => {
-    const digits = string
-      .replace(/one/g, 'o1e')
-      .replace(/two/g, 't2o')
-      .replace(/three/g, 't3e')
-      .replace(/four/g, 'f4r')
-      .replace(/five/g, 'f5e')
-      .replace(/six/g, 's6x')
-      .replace(/seven/g, 's7n')
-      .replace(/eight/g, 'e8t')
-      .replace(/nine/g, 'n9e')
-      .match(/\d/g) as RegExpMatchArray;
-    total += parseInt(`${digits[0]}${digits[digits.length - 1]}`);
+export const day2 = (data: string[]): number => {
+  let sum = 0;
+  data.forEach((game, index) => {
+    let red = game.match(/([1-9][3-9]|[2-9]0+) red/g) as RegExpMatchArray;
+    let green = game.match(/([1-9][4-9]|[2-9]0+) green/g) as RegExpMatchArray;
+    let blue = game.match(/([1-9][5-9]|[2-9]0+) blue/g) as RegExpMatchArray;
+    if (!red && !green && !blue) {
+      sum += index + 1;
+    }
   });
 
-  return total;
-}
+  return sum;
+};
